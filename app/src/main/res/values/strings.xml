@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FavoritFragment</string>
+    <string name="pasta_pizza"><![CDATA[Pasta & Pizza]]></string>
+    <string name="restaurant_pasta_pizza_with_good_food_rating"><![CDATA[Restaurant Pasta & Pizza with good food rating]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
