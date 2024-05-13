@@ -34,7 +34,7 @@ public class ReviewActivity extends AppCompatActivity {
         //navbar
         ImageButton btnHome = findViewById(R.id.btn_home);
         btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(ReviewActivity.this, com.example.foodaround.ui.MainActivity.class);
+            Intent intent = new Intent(ReviewActivity.this, HomepageActivity.class);
             startActivity(intent);
         });
 

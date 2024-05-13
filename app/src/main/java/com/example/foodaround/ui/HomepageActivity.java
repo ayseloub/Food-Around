@@ -8,24 +8,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodaround.R;
 
-
-public class MainActivity extends AppCompatActivity {
-
+public class HomepageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homepage);
 
         //navbar
-        ImageButton btnHome = findViewById(R.id.btn_home);
-        btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, HomepageActivity.class);
-            startActivity(intent);
-        });
-
         ImageButton btnNotif = findViewById(R.id.btn_notif);
         btnNotif.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ReviewActivity.class);
+            Intent intent = new Intent(HomepageActivity.this, ReviewActivity.class);
             startActivity(intent);
         });
     }
