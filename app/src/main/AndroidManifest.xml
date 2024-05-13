@@ -23,12 +23,12 @@
         </activity>
 
         <activity
-            android:name=".ui.HomepageActivity"
+            android:name=".ui.HomepageFragment"
             android:exported="true">
         </activity>
 
         <activity
-            android:name=".ui.ReviewActivity"
+            android:name=".ui.ReviewFragment"
             android:exported="true">
         </activity>
 
