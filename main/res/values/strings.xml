@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Halaman Profil</string>
+    <string name="app_name">EatFragment</string>
     <string name="title">Judul</string>
     <string name="description">Deskripsi</string>
     <string name="submit">Submit</string>
