@@ -9,19 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodaround.R;
-import com.example.foodaround.database.ReviewEntity;
+import com.example.foodaround.database.Review;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewViewHolder> {
 
-    private List<ReviewEntity> reviews = new ArrayList<>();
+    private List<Review> reviews = new ArrayList<>();
     private OnItemClickListener listener;
 
     public interface OnItemClickListener {
-        void onItemClick(ReviewEntity review);
-        void onDeleteClick(ReviewEntity review);
+        void onItemClick(Review review);
+        void onDeleteClick(String reviewId);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -38,7 +38,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
 
     @Override
     public void onBindViewHolder(@NonNull ReviewViewHolder holder, int position) {
-        ReviewEntity review = reviews.get(position);
+        Review review = reviews.get(position);
         holder.tvNama.setText(review.getNama());
         holder.tvAlamat.setText(review.getAlamat());
         holder.tvNamaresto.setText(review.getNamaresto());
@@ -49,7 +49,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         });
         holder.tvDelete.setOnClickListener(v -> {
             if (listener != null) {
-                listener.onDeleteClick(review);
+                listener.onDeleteClick(review.getId());
             }
         });
     }
@@ -59,7 +59,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         return reviews.size();
     }
 
-    public void setReviews(List<ReviewEntity> reviews) {
+    public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
         notifyDataSetChanged();
     }
@@ -79,6 +79,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         }
     }
 }
+
 
 
 

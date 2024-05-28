@@ -59,10 +59,9 @@
         android:id="@+id/tv_namaresto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/yellow"
         android:gravity="center"
-        android:text="Deadline"
-        android:textColor="@color/black"
+        android:text="Nama Resto"
+        android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -75,7 +74,7 @@
         android:id="@+id/tv_des"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description"
+        android:text="Review"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -83,17 +82,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_namaresto" />
-
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tugas ini adalah"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_des" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
