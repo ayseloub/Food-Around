@@ -42,6 +42,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         holder.tvNama.setText(review.getNama());
         holder.tvAlamat.setText(review.getAlamat());
         holder.tvNamaresto.setText(review.getNamaresto());
+        holder.tvReview.setText(review.getReview());
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onItemClick(review);
@@ -68,6 +69,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
         private TextView tvNama;
         private TextView tvAlamat;
         private TextView tvNamaresto;
+        private TextView tvReview;
         private TextView tvDelete;
 
         public ReviewViewHolder(@NonNull View itemView) {
@@ -75,11 +77,11 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
             tvNama = itemView.findViewById(R.id.tv_nama);
             tvAlamat = itemView.findViewById(R.id.tv_alamat);
             tvNamaresto = itemView.findViewById(R.id.tv_namaresto);
+            tvReview = itemView.findViewById(R.id.tv_review);
             tvDelete = itemView.findViewById(R.id.tv_delete);
         }
     }
 }
-
 
 
 

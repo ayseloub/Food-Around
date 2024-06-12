@@ -29,7 +29,7 @@ public class ReviewFragment extends Fragment {
     private RecyclerView recyclerView;
     private LinearLayout layAddReview;
     private EditText etNama, etAlamat, etNamaresto, etReview;
-    private Button btnClear, btnSubmit, btnHome;
+    private Button btnClear, btnSubmit;
 
     private ReviewViewModel reviewViewModel;
     private ReviewAdapter reviewAdapter;
